@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Linkedin Scraping</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<style>
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+table {
+    width: 100%;
+    max-width: 400px;
+  
+    margin: 0 auto;
+    display: block;
+    overflow-x: auto;
+    border-spacing: 0;
+}
+
+tbody {
+    white-space: nowrap;
+}
+
+th,
+td {
+    padding: 5px 10px;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+th {
+    position: sticky;
+    top: 0;
+  
+    vertical-align: bottom;
+}
+  </style>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Search profiles in linkedin</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="/search"method="post">
+      <input type="email" name="email" placeholder="type your email" required="required" />
+    	<input type="password" name="password" placeholder="type your password" required="required" />
+    	<input type="text" name="search" placeholder="type your key word" required="required" />
+    	<input type="number" name="pages" placeholder="type your pages" required="required" />
+    
+      <button type="submit" class="btn btn-primary btn-block btn-large">Search</button>
+    </form>
+ </div>
+
+
+</body>
+</html>

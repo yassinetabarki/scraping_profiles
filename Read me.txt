@@ -1,0 +1,24 @@
+1: install python 3.9.4
+https://www.python.org/downloads/release/python-394/
+2: install pip 
+-open cmd and copy this line
+
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+3 check if your install is correct 
+python get-pip.py
+
+4 set pip to the enviroment variable
+-open cmd 
+ 
+set PATH=%PATH%;C:\Users\<you user name>\AppData\Local\Programs\Python\Python39\Scripts
+
+5 then install these python libraries
+pip install flask
+pip install json2html
+pip install selenium
+pip install pandas
+pip install openpyxl
+
+6 set the correct path of the python and the folder web_scraping (application location )
+& C:/Users/<you user name>/AppData/Local/Programs/Python/Python39/python.exe c:/Users/<you user name>/Desktop/web_scraping/app/server.py
