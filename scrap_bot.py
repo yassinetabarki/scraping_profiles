@@ -96,7 +96,7 @@ class bot:
         global driver
         driver = webdriver.Chrome('./webdriver/chromedriver.exe', chrome_options=chrome_options)
         #open the webpage
-        driver.get("https://www.linkedin.com/login")
+        driver.get("https://www.site.com/login")
         bot.login(email,password)
         bot.search(search)
         time.sleep(3)
